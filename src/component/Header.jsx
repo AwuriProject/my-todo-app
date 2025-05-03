@@ -13,7 +13,11 @@ const Header = () => {
         <EditNoteIcon fontSize="200" /> My Todo App
       </h1>
       <div className="cursor-pointer text-white" onClick={toggleDarkMode}>
-        {darkMode ? <ToggleOnIcon /> : <ToggleOffIcon />}
+        {darkMode ? (
+          <ToggleOnIcon fontSize="large" />
+        ) : (
+          <ToggleOffIcon fontSize="large" />
+        )}
       </div>
     </header>
   );

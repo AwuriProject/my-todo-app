@@ -13,7 +13,7 @@
 
 @layer base {
   html {
-    @apply text-base box-border;
+    @apply text-base box-border font-[Montserrat];
   }
   *,
   *::before,
@@ -21,10 +21,10 @@
     @apply p-0 m-0 box-border;
   }
   body {
-    @apply bg-[url("https://transparenttextures.com/patterns/notebook-dark.png")] dark:bg-[#1c1c1c];
+    @apply bg-[url("https://transparenttextures.com/patterns/notebook-dark.png")] dark:bg-[#a0a0ab];
   }
   h1 {
-    @apply text-white font-extralight font-[Mclaren] text-3xl;
+    @apply text-white font-extralight font-[Mclaren] text-3xl md:text-5xl;
   }
   p {
     @apply text-[#666];
@@ -32,18 +32,18 @@
 }
 @layer components {
   header {
-    @apply bg-burnt-yellow pt-12 pb-12 pl-16 pr-16 shadow-header flex justify-between items-center;
+    @apply bg-burnt-yellow shadow-header flex justify-between items-center pt-4 pb-4 pr-2 pl-2 sm:p-8 md:p-16;
   }
   footer {
     @apply absolute text-center top-200 w-full  text-black;
   }
   form {
-    @apply bg-amber-50 w-120 mt-7.5 mr-auto mb-6 ml-auto p-2.5 rounded-lg dark:bg-[#0a1f44] dark:text-white;
+    @apply bg-amber-50 w-95 mt-7.5 mr-auto mb-6 ml-auto p-2.5 rounded-lg sm:w-150 dark:bg-[#0a1f44] dark:text-white;
   }
 }
 
 @utility note {
-  @apply bg-amber-50 w-60 p-3.5 rounded-lg m-8 shadow-note text-lg sm:text-2xl sm:w-100;
+  @apply bg-amber-50 w-70 p-3.5 rounded-lg m-8 shadow-note text-lg sm:text-2xl sm:w-100;
 }
 
 @utility note-btn {

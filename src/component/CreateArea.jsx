@@ -47,7 +47,7 @@ const CreateArea = (props) => {
         <textarea
           className="form-group"
           name="content"
-          rows={isExpand ? "3" : 1}
+          rows={isExpand ? 3 : 1}
           onClick={handleExpand}
           value={createNote.content}
           onChange={handleNote}

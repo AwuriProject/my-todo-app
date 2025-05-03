@@ -62,7 +62,7 @@ const Note = ({ id, title, content, onDelete, onEdit }) => {
               {content}
             </p>
           </div>
-          <div>
+          <div className="flex items-center">
             <button type="submit" onClick={handleDelete} className="note-btn">
               <DeleteIcon fontSize="50" />
             </button>
